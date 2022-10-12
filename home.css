@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background : beige ;
+  margin : 0 ;
+  padding : 0 ;
+  transition: all .3s;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background:rgba(255, 99, 71, .3);
+  border-radius:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(255, 99, 71, .9);
+  border-radius:2px;
+}
+
 #navbar {
     overflow: hidden;
     background-color: #f1f1f1;
@@ -85,3 +105,48 @@
 {
   font-weight: bold;
 }
+
+.card-body{
+  padding : 1.5em ;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-body a{
+  text-decoration: none;
+  background-color: dodgerblue;
+  padding: 15px 25px;
+  color:white;
+  border-radius: 15px;
+  display:block;
+  text-align: center;
+  transition: all .2s;
+}
+
+.card:hover {
+  box-shadow:5px 5px 25px rgba(0,0,0, .5);
+  transform: translate(-5px, -5px);
+}
+
+.card-body a:hover{
+  background-color: SteelBlue;
+}
+.card-body a:hover svg{
+  animation : iconjln 1s;
+}
+
+@keyframes iconjln{
+  0%, 100% {
+    opacity : 1;
+    transform: translateX(0%);
+  }
+  50%{
+    opacity:0;
+    transform: translateX(100%);
+  }
+  70%{
+    opacity:0;
+    transform:translateX(-100%);
+  }
+}
+
+
